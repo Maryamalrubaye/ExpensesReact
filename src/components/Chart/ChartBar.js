@@ -2,7 +2,7 @@ import React from "react";
 import "./ChartBar.css";
 const ChartBar = (props) => {
   let barFillHight = "0%";
-  if (props.maxValue > 0) {
+  if (props.max > 0) {
     barFillHight = Math.round((props.max / props.maxValue) * 100) + "%";
   }
   return (
